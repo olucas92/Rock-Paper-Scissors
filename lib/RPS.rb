@@ -1,7 +1,7 @@
-require 'sinatra'
+require 'sinatra/base'
 
-# class RPS
-  set :views, Proc.new { file.join(root, "..", "views") }
+class RPS < Sinatra::Application
+  set :views, Proc.new { File.join(root, "..", "views") }
 
   get '/' do
     erb :index
@@ -16,5 +16,4 @@ require 'sinatra'
     @selection = params[:selection]
     erb :game
   end
-
-# end
+end
