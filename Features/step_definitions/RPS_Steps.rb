@@ -1,9 +1,9 @@
 Given(/^I am on the homepage$/) do
-  pending # express the regexp above with the code you wish you had
+  visit '/'
 end
 
-When(/^I press "(.*?)"$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
+When(/^I press "(.*?)"$/) do |game|
+  visit '/game'
 end
 
 Then(/^I should see "(.*?)"$/) do |arg1|
