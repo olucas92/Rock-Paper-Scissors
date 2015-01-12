@@ -6,4 +6,4 @@ Feature: Starting the game
 Scenario: Registering
   Given I am on the homepage
   When I press "New Game"
-  Then I should see ""
+  Then I should see "Let's play Rock Paper Scissors!"
