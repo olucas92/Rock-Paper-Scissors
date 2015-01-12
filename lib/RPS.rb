@@ -1,6 +1,6 @@
 require 'sinatra'
 
-class RPS
+# class RPS
   set :views, Proc.new { file.join(root, "..", "views") }
 
   get '/' do
@@ -17,4 +17,4 @@ class RPS
     erb :game
   end
 
-end
+# end

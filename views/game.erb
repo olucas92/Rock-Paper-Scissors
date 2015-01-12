@@ -2,7 +2,26 @@
 Let's play Rock Paper Scissors!
 </div>
 
+<div>
+  <form method="post">
+    <input name="selection" value="rock" type="hidden">
+    <button type="submit">Rock</button>
+  </form>
+</div>
 
+<div>
+  <form method="post">
+    <input name="selection" value="Paper" type="hidden">
+    <button type="submit">Paper</button>
+  </form>
+</div>
+
+<div>
+  <form method="post">
+    <input name="selection" velue="Scissors" type="hidden">
+    <button type="submit">Scissors</button>
+  </form>
+</div>
 
 <% @computer = ["Rock", "Paper", "Scissors" %>
 <% @rules = { "Rock" => "Scissors", "Scissors" => "Paper", "Paper" => "Rock" } %>
