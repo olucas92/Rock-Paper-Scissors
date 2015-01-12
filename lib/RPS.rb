@@ -11,4 +11,10 @@ class RPS
     erb :game
   end
 
+  post '/game' do
+    puts params
+    @selection = params[:selection]
+    erb :game
+  end
+
 end
